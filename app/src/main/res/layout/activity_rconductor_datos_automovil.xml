@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erickcairdiel.koko.RConductorDatosAutomovil">
+
+    <EditText
+        android:id="@+id/txt_marca"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_marcaL"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="181dp" />
+
+    <EditText
+        android:id="@+id/txt_modelo"
+        android:layout_width="214dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modeloL"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="181dp" />
+
+    <TextView
+        android:id="@+id/txt_datos"
+        android:layout_width="178dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/datos_del_autom_vil"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="149dp" />
+
+    <TextView
+        android:id="@+id/txt_marcaL"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/marca"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txt_modeloL"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/modelo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_marca"
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txt_matriculaL"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/matricula"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modelo"
+        android:layout_marginRight="300dp"
+        android:layout_marginLeft="35dp" />
+
+    <EditText
+        android:id="@+id/txt_matricula"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matriculaL"
+        android:layout_marginRight="181dp"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:id="@+id/img_auto"
+        android:layout_width="126dp"
+        android:layout_height="118dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_marginRight="70dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imbtn_cargar"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matricula"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="59dp"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/regresar"
+        android:drawableStart="@drawable/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_continuar"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/continuar"
+        android:drawableStart="@drawable/continuar"
+        android:text="@string/btn_Continuar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp" />
+
+</android.support.constraint.ConstraintLayout>

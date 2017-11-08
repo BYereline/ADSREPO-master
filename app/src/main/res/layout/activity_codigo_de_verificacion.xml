@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erickcairdiel.koko.CodigoDeVerificacion">
+
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/continuar"
+        android:drawableStart="@drawable/continuar"
+        android:text="@string/btn_Continuar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="40dp" />
+
+    <EditText
+        android:id="@+id/txt_Codigo"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="336dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_IngresaL"
+        android:layout_marginRight="85dp"
+        android:layout_marginLeft="84dp" />
+
+    <TextView
+        android:id="@+id/txt_IngresaL"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/txt_IngresarL"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="34dp" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/regresar"
+        android:drawableStart="@drawable/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_continuar"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp" />
+</android.support.constraint.ConstraintLayout>
